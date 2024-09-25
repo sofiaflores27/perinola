@@ -17,7 +17,7 @@ class Apuesta:
          if cuantas > self.fichas:
              raise ValueError("Error")
          self.fichas -= cuantas
-     def tomasTodas(self):
+     def tomarTodas(self):
       cantidad = self.fichas
       self.fichas = 0
       return cantidad

@@ -14,6 +14,8 @@ class Jugador:
             raise ValueError("No puedes sacar más fichas de las que tienes.")
         self.fichas -= cuantas
 
-    def __str__(self):
-        return f"Jugador: {self.nombre}, Fichas: {self.fichas}"
+    def tieneFicha(self, cuantas=1):
+        return self.fichas >= cuantas
     
+
+
