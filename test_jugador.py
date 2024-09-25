@@ -11,9 +11,18 @@ def test_dar_ficha():
     j.darFicha(5)
     assert(j.fichas == 15)
 
+jugador1 = Jugador("Alice", 10)
+print(jugador1)
 
-tomas = Jugador("tomas", 15)
-print(tomas) 
+try:
+    jugador1.sacarFicha(5)
+    print(jugador1)
+    jugador1.sacarFicha(6)
+except ValueError as e:
+    print(e)
+
+#tomas = Jugador("tomas", 15)
+#print(tomas) 
 
 
 
